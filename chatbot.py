@@ -49,7 +49,7 @@ llm = st.sidebar.selectbox(
     ],
 )
 temperature = st.sidebar.slider("Select the value of the temperature :", min_value=0.0, max_value=2.0, value=0.1)
-max_token = st.sidebar.slider("Select thge value of max number of token :", min_value=50, max_value=200, value=100)
+max_token = st.sidebar.slider("Select thge value of max number of token :", min_value=50, max_value=1000, value=100)
 
 if st.button("Answer"):
     if query and api_key:
